@@ -13,7 +13,7 @@ public class RedissonConfig {
   public RedissonClient redissonClient() {
     Config config = new Config();
     config.useSingleServer()
-        .setAddress("rediss://default:AUnpAAIncDJmNjhkODQ4NWE0M2M0YjRhYWJjNTk4NDEyYmUyMGMyNHAyMTg5MjE@thorough-snail-18921.upstash.io:6379");
+        .setAddress("redis://default:gQAAAAAAAY0NAAIocDI3Yjc4M2JlM2VjNTU0MWE1YjNlZDA5MWNhYjhjNzM1NnAyMTAxNjQ1@magnetic-blowfish-101645.upstash.io:6379");
     return Redisson.create(config);
   }
 }
